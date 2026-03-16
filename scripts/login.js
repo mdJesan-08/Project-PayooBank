@@ -10,7 +10,7 @@ btn.addEventListener("click",function(){
     if(numInp.value === "01234567890" && passInp.value ==="1234")
     {
         alert("login Successful");
-        window.location.assign("/home.html")
+        window.location.assign("home.html")
     }
     else
     {
