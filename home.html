@@ -59,18 +59,18 @@
     <!-- hero and buttons -->
 
     <section class="hero-buttons w-11/12 mx-auto ">
-        <div class="welcoem ">
+        <div class="welcome">
             <h2 class=" text-2xl font-bold mb-2">Welcome to Pay<span class="text-primary">oo</span></h2>
             <p class="text-1xl text-gray-400">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         </div>
 
         <div class="buttons mt-5  grid grid-cols-3 grid-rows-2 gap-2">
-            <button class="btn flex-col btn-primary h-full p-2.5 btn-soft">
+            <button id="add-money-btn"  class="btn flex-col btn-primary h-full p-2.5 btn-soft">
                 <img src="./assets/opt-1.png" alt="">
                 <h2>Add Money</h2>
             </button>
 
-            <button class="btn flex-col btn-primary h-full p-2.5 btn-soft">
+            <button id ="cash-out-btn"   class="btn flex-col btn-primary h-full p-2.5 btn-soft">
                 <img src="./assets/opt-2.png" alt="">
                 <h2>Cash Out</h2>
             </button>
@@ -97,8 +97,10 @@
         </div>
     </section>
 
-    <!-- Cashout section -->
-    <section class="cashout w-11/12  mx-auto mt-5">
+    <!-- Dieerent forms -->
+
+    <!-- Form1  Cashout section -->
+    <section id = "cash-out-section"   class=" w-11/12  mx-auto mt-5 hidden">
         <h2 class="text-1xl font-bold p-1.5 text-center">Cashout</h2>
 
         <div class="card  bg-gray-300  shadow  mt-5 rounded-5xl ">
@@ -118,7 +120,7 @@
             <label class="label font-bold text-neutral">Pin Number</label>
             <input id ="cashout-pin" type="password" minlength="11"  maxlength="11" class="input rounded-full bg-base-200" placeholder= "Enter 4 digit pin"/>
 
-            <button id="withdraw-btn" class=" btn btn-primary mt-4 rounded-full">Withdraw Money</button>
+            <button id="with-draw-btn" class=" btn btn-primary mt-4 rounded-full">Withdraw Money</button>
 
             </fieldset>
         </div>
@@ -127,8 +129,9 @@
 
     </section>
 
-    <!-- Add Money Section -->
-    <section class="cashout w-11/12  mx-auto mt-5">
+
+    <!-- From 2 Add Money Section -->
+    <section id ="add-money-section" class="w-11/12  mx-auto mt-5 hidden">
         <h2 class="text-1xl font-bold p-1.5 text-center">Add Money</h2>
 
         <div class="card  bg-gray-300  shadow  mt-5 rounded-5xl ">
@@ -145,18 +148,18 @@
             </select>
 
             <!-- Agent Number -->
-            <label class="label font-bold w-full text-neutral">Agent Number</label>
+            <label class="label font-bold w-full text-neutral">Bank Account Number</label>
             <input id ="agent-number" type="text" minlength="11"  maxlength="11" class="input rounded-full bg-base-200" placeholder="Enter Your Number"/>
 
             <!-- Amount No -->
-            <label class="label font-bold text-neutral">Amount</label>
-            <input id ="cashout-amount" type="number" class="input rounded-full bg-base-200"placeholder=" Enter amount to withdraw" />
+            <label class="label font-bold text-neutral">Amount to Add</label>
+            <input id ="add-amount" type="number" class="input rounded-full bg-base-200"placeholder=" Enter amount to withdraw" />
 
             <!-- password -->
             <label class="label font-bold text-neutral">Pin Number</label>
             <input id ="cashout-pin" type="password" minlength="11"  maxlength="11" class="input rounded-full bg-base-200" placeholder= "Enter 4 digit pin"/>
 
-            <button id="withdraw-btn" class=" btn btn-primary mt-4 rounded-full">Add Money</button>
+            <button id="add-money-btn" class=" btn btn-primary mt-4 rounded-full">Add Money</button>
 
             </fieldset>
         </div>
@@ -164,6 +167,7 @@
         </div>      
 
     </section>
+
     <script src="./scripts/cashout.js"></script>
     <script src="./scripts/machine.js"></script>
 

@@ -1,7 +1,46 @@
-    let withDrawbtn = document.getElementById("withdraw-btn");
-    console.log(withDrawbtn);
+let addMoneyBtn = document.getElementById("add-money-btn");
+console.log(addMoneyBtn);
 
-    withDrawbtn.addEventListener("click",function(){
+let cashoutBtn = document.getElementById("cash-out-btn");
+console.log(cashoutBtn);
+
+
+let addMoneySection = document.getElementById("add-money-section");
+let cashOutSection = document.getElementById("cash-out-section");
+
+addMoneyBtn.addEventListener("click", function()
+{
+    // sobai k age hide koro
+    addMoneySection.classList.add("hidden");
+    cashOutSection.classList.add("hidden");
+
+    // remove hidden
+    console.log(addMoneySection);
+    
+    addMoneySection.classList.remove("hidden")
+
+})
+
+cashoutBtn.addEventListener("click", function()
+{
+    // sobai k age hide koro
+    addMoneySection.classList.add("hidden");
+    cashOutSection.classList.add("hidden");
+    console.log(cashOutSection);
+    
+
+    // remove hidden
+
+    cashOutSection.classList.remove("hidden")
+
+})
+
+
+
+let withDrawbtn = document.getElementById("with-draw-btn");
+console.log(withDrawbtn);
+
+withDrawbtn.addEventListener("click",function(){
 
         // get account Number the number
         let accNum = getValue("agent-number");
@@ -44,3 +83,5 @@
     })
 
 
+
+console.log("HEllo from cashout js");
